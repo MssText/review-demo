@@ -3,5 +3,17 @@
 </script>
 
 <template>
-    <div class="app">这是Vue项目</div>
+    <div class="app">
+      <p>
+        这是Vue项目
+      </p>
+    </div>
 </template>
+
+<style lang="scss">
+  div {
+    & p {
+      color: aqua
+    };
+  }
+</style>

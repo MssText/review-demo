@@ -1,12 +1,15 @@
 {
-  "name": "design-token-demo",
+  "name": "review-demo",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean": "nx run-many --target=clean && nx reset",
-    "build": "nx run-many --target=build",
+    "build": "nx run-many --target=build --exclude=review-demo --parallel=3",
     "serve": "nx run-many --target=serve",
+    "build:affected": "nx affected --target=build",
+    "graph": "nx dep-graph",
+    "clear:vite": "rimraf packages/*/node_modules/.vite",
+    "clear:cache": "nx reset",
     "format": "lint-staged"
   },
   "dependencies": {
@@ -55,7 +58,9 @@
     "stylelint-config-standard-scss": "^9.0.0",
     "typescript": "~4.9.5",
     "vite": "^4.0.1",
+    "vite-plugin-dts": "^2.3.0",
     "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-inspect": "^0.7.28",
     "vite-tsconfig-paths": "^4.0.2",
     "vitest": "^0.25.8"
   }
