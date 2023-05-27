@@ -26,9 +26,6 @@
     {
       "path": "./tsconfig.app.json"
     },
-    {
-      "path": "./tsconfig.spec.json"
-    }
   ],
   "compileOnSave": false,
   "exclude": ["node_modules", "tmp"]

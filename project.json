@@ -1,5 +1,5 @@
 {
-  "name": "nx-react-demo",
+  "name": "design-token-demo",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "./src",
   "projectType": "application",
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/nx-react-demo"
+        "outputPath": "dist/design-token-demo"
       },
       "configurations": {
         "development": {
@@ -24,15 +24,15 @@
       "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "nx-react-demo:build"
+        "buildTarget": "design-token-demo:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "nx-react-demo:build:development",
+          "buildTarget": "design-token-demo:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "nx-react-demo:build:production",
+          "buildTarget": "design-token-demo:build:production",
           "hmr": false
         }
       }
@@ -41,23 +41,23 @@
       "executor": "@nrwl/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "nx-react-demo:build"
+        "buildTarget": "design-token-demo:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "nx-react-demo:build:development"
+          "buildTarget": "design-token-demo:build:development"
         },
         "production": {
-          "buildTarget": "nx-react-demo:build:production"
+          "buildTarget": "design-token-demo:build:production"
         }
       }
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/nx-react-demo"],
+      "outputs": ["coverage/design-token-demo"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "coverage/nx-react-demo"
+        "reportsDirectory": "coverage/design-token-demo"
       }
     },
     "lint": {
@@ -70,7 +70,7 @@
     "serve-static": {
       "executor": "@nrwl/web:file-server",
       "options": {
-        "buildTarget": "nx-react-demo:build"
+        "buildTarget": "design-token-demo:build"
       }
     }
   },

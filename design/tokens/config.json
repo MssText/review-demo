@@ -1,0 +1,81 @@
+{
+  "source": [
+    "tokens/**/*.json"
+  ],
+  "platforms": {
+    "web": {
+      "transformGroup": "ios",
+      "buildPath": "ios/Classes/Generated/",
+      "prefix": "StyleDictionary",
+      "files": [{
+        "destination": "StyleDictionarySize.h",
+        "format": "ios/static.h",
+        "type": "float",
+        "className": "StyleDictionarySize",
+        "filter": {
+          "attributes": {
+            "category": "size"
+          }
+        }
+      },{
+        "destination": "StyleDictionarySize.m",
+        "format": "ios/static.m",
+        "type": "float",
+        "className": "StyleDictionarySize",
+        "filter": {
+          "attributes": {
+            "category": "size"
+          }
+        }
+      },{
+        "destination": "StyleDictionaryIcons.h",
+        "format": "ios/strings.h",
+        "className": "StyleDictionaryIcons",
+        "filter": {
+          "attributes": {
+            "category": "content",
+            "type": "icon"
+          }
+        }
+      },{
+        "destination": "StyleDictionaryIcons.m",
+        "format": "ios/strings.m",
+        "className": "StyleDictionaryIcons",
+        "filter": {
+          "attributes": {
+            "category": "content",
+            "type": "icon"
+          }
+        }
+      },{
+        "destination": "StyleDictionaryColor.h",
+        "format": "ios/colors.h",
+        "className": "StyleDictionaryColor",
+        "type": "StyleDictionaryColorName",
+        "filter": {
+          "attributes": {
+            "category": "color"
+          }
+        }
+      },{
+        "destination": "StyleDictionaryColor.m",
+        "format": "ios/colors.m",
+        "className": "StyleDictionaryColor",
+        "type": "StyleDictionaryColorName",
+        "filter": {
+          "attributes": {
+            "category": "color"
+          }
+        }
+      },{
+        "destination": "StyleDictionaryProperties.h",
+        "format": "ios/singleton.h",
+        "className": "StyleDictionaryProperties"
+      },{
+        "destination": "StyleDictionaryProperties.m",
+        "format": "ios/singleton.m",
+        "className": "StyleDictionaryProperties"
+      }]
+    }
+  }
+}
