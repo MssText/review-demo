@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "nx-react-demo",
+  "npmScope": "review-demo",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -8,8 +8,7 @@
         "cacheableOperations": [
           "build",
           "lint",
-          "test",
-          "e2e"
+          "test"
         ],
         "accessToken": "OWI1MzUwMTAtYmU5ZS00MjgzLWJkYTQtYzZlODYxNTVlN2JifHJlYWQtd3JpdGU="
       }
@@ -22,12 +21,6 @@
       ],
       "inputs": [
         "production",
-        "^production"
-      ]
-    },
-    "e2e": {
-      "inputs": [
-        "default",
         "^production"
       ]
     },
@@ -58,22 +51,5 @@
     ],
     "sharedGlobals": []
   },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "bundler": "vite",
-        "babel": true
-      },
-      "component": {
-        "style": "scss"
-      },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
-    }
-  },
-  "defaultProject": "nx-react-demo"
+  "defaultProject": "review-demo"
 }

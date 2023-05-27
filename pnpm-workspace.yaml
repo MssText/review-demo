@@ -1,4 +1,3 @@
 packages:
-  - 'design/**'
-  - 'apps/**'
-  - 'config/**'
+  - 'packages/**'
+  - 'examples/**'

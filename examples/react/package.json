@@ -1,0 +1,23 @@
+{
+    "name": "@review-demo/react",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
+    "types": "dist/types/index.d.ts",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite dev --host",
+        "build": "vite build",
+        "preview": "vite preview --host"
+    },
+    "devDependencies": {
+        "@types/react": "16.14.0",
+        "@types/react-dom": "16.9.0",
+        "react": "16.14.0",
+        "react-dom": "16.14.0"
+    }
+}

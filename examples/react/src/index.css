@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.litmirror {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.editor {
+    outline: 1px solid violet;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 2px 6px;
+}

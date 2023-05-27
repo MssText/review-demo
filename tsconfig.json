@@ -13,7 +13,6 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -24,9 +23,9 @@
   "include": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.base.json"
     },
   ],
   "compileOnSave": false,
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules"]
 }

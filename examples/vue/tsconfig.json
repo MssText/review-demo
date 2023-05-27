@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "outDir": "dist",
+        "jsx": "preserve",
+        "allowJs": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "experimentalDecorators": true,
+        "types": [
+            "node",
+            "vite/client"
+        ],
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+            "vue": [
+                "node_modules/vue"
+            ],
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+    ],
+    "exclude": [
+        "dist"
+    ],
+    "vueCompilerOptions": {
+        "target": 2.7
+    }
+}

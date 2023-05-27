@@ -1,0 +1,48 @@
+{
+    "name": "examples/vue",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "examples/vue/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": [
+                "{options.outputFile}"
+            ],
+            "options": {
+                "lintFilePatterns": [
+                    "examples/vue/**/*.{ts,js,vue}"
+                ]
+            }
+        },
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "pnpm dev",
+                "cwd": "examples/vue"
+            }
+        },
+        "preview": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "pnpm preview",
+                "cwd": "examples/vue"
+            }
+        },
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "pnpm build",
+                "cwd": "examples/vue"
+            }
+        },
+        "build:watch": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "pnpm build:watch",
+                "cwd": "examples/vue"
+            }
+        }
+    }
+}

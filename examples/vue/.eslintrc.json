@@ -1,0 +1,26 @@
+{
+    "extends": ["../../.eslintrc.json"],
+    "ignorePatterns": ["!**/*"],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "extraFileExtensions": [".vue"],
+        "parser": "@typescript-eslint/parser"
+    },
+    "rules": {
+        "no-console": "off"
+    },
+    "overrides": [
+        {
+            "files": ["*.ts", "*.js"],
+            "rules": {}
+        },
+        {
+            "files": ["*.ts", "*.js"],
+            "rules": {}
+        },
+        {
+            "files": ["*.ts", "*.js"],
+            "rules": {}
+        }
+    ]
+}

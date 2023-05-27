@@ -1,0 +1,25 @@
+{
+    "name": "@review-demo/vue",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.es.js",
+    "types": "dist/types/index.d.ts",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite dev --host",
+        "build": "vite build",
+        "build:watch": "vite build --watch",
+        "preview": "vite preview --host"
+    },
+    "devDependencies": {
+        "vue": "2.7.14",
+        "vue-eslint-parser": "^9.3.0"
+    },
+    "peerDependencies": {
+        "vue": "^2.7.0"
+    }
+}
