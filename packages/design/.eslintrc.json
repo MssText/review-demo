@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "../../.eslintrc.json"
+    ],
+    "ignorePatterns": [
+        "!**/*"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.js",
+                "*.cjs"
+            ],
+            "rules": {
+                "no-console": "off"
+            }
+        }
+    ]
+}

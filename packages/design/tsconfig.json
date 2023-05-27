@@ -1,0 +1,18 @@
+{
+    "extends": "@config/tsconfig/base",
+    "compilerOptions": {
+        "types": [
+            "node"
+        ],
+        "esModuleInterop": true,
+        "module": "esnext",
+        "target": "esnext",
+        "resolveJsonModule": true
+    },
+    "ts-node": {
+        "esm": true,
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
+}

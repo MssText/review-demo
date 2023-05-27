@@ -1,0 +1,11 @@
+{
+    "name": "@design-tokens",
+    "version": "0.0.0",
+    "sideEffects": false,
+    "files": [
+        "platforms/"
+    ],
+    "dependencies": {
+      "@config/tsconfig": "workspace:*"
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "review-demo",
+  "name": "@review-demo",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "tags": []
 }

@@ -105,11 +105,13 @@ importers:
 
   examples/react:
     specifiers:
+      '@config/tsconfig': workspace:*
       '@types/react': 16.14.0
       '@types/react-dom': 16.9.0
       react: 16.14.0
       react-dom: 16.14.0
     devDependencies:
+      '@config/tsconfig': link:../../packages/config/tsconfig
       '@types/react': 16.14.0
       '@types/react-dom': 16.9.0
       react: 16.14.0
@@ -117,11 +119,22 @@ importers:
 
   examples/vue:
     specifiers:
+      '@config/tsconfig': workspace:*
       vue: 2.7.14
       vue-eslint-parser: ^9.3.0
     devDependencies:
+      '@config/tsconfig': link:../../packages/config/tsconfig
       vue: 2.7.14
       vue-eslint-parser: 9.3.0_eslint@8.41.0
+
+  packages/config/tsconfig:
+    specifiers: {}
+
+  packages/design:
+    specifiers:
+      '@config/tsconfig': workspace:*
+    dependencies:
+      '@config/tsconfig': link:../config/tsconfig
 
 packages:
 
