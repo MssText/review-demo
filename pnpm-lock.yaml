@@ -7,6 +7,7 @@ importers:
       '@commitlint/cli': ^17.3.0
       '@commitlint/config-conventional': ^17.3.0
       '@nrwl/cypress': 15.9.2
+      '@nrwl/devkit': ^16.2.2
       '@nrwl/eslint-plugin-nx': 15.9.2
       '@nrwl/js': 15.9.2
       '@nrwl/linter': 15.9.2
@@ -58,6 +59,7 @@ importers:
       '@commitlint/cli': 17.6.3
       '@commitlint/config-conventional': 17.6.3
       '@nrwl/cypress': 15.9.2_wcsbdq5t7gjy5vxo4rkimtv6li
+      '@nrwl/devkit': 16.2.2_nx@15.9.2
       '@nrwl/eslint-plugin-nx': 15.9.2_pmpks2442i5zsnmtdobo2ib3qe
       '@nrwl/js': 15.9.2_nx@15.9.2+typescript@4.9.5
       '@nrwl/linter': 15.9.2_52iljk46efdys6cqt6tb2t6bba
@@ -2277,6 +2279,14 @@ packages:
       tslib: 2.5.2
     dev: true
 
+  /@nrwl/devkit/16.2.2_nx@15.9.2:
+    resolution: {integrity: sha512-R8OSh33HtGycSuu0KshpH/tsTdi6j4w7DuIb+Sa59UDIkchpvMeNAz8tj/05Z2tTntDZnYqPkmCs6rkZ4PvY4Q==}
+    dependencies:
+      '@nx/devkit': 16.2.2_nx@15.9.2
+    transitivePeerDependencies:
+      - nx
+    dev: true
+
   /@nrwl/eslint-plugin-nx/15.9.2_pmpks2442i5zsnmtdobo2ib3qe:
     resolution: {integrity: sha512-WeR+/mjzteBz9401mZroyML7sgnxF32FjMBcmVjuG5a5Eji36ChXn8Vtzm3IhfAY3k2sFbANxYLSNQYf5JJyqw==}
     peerDependencies:
@@ -2531,6 +2541,20 @@ packages:
       - '@swc-node/register'
       - '@swc/core'
       - debug
+    dev: true
+
+  /@nx/devkit/16.2.2_nx@15.9.2:
+    resolution: {integrity: sha512-MTYzetk4AQ9u2syEb9z+drDsu6U6NRAXVuUDMNg0tpZcbtE9bCSLH2ngfvTCqmLrAMBsJZRdv0twS1iepMhlAg==}
+    peerDependencies:
+      nx: '>= 15 <= 17'
+    dependencies:
+      '@nrwl/devkit': 16.2.2_nx@15.9.2
+      ejs: 3.1.9
+      ignore: 5.2.4
+      nx: 15.9.2
+      semver: 7.3.4
+      tmp: 0.2.1
+      tslib: 2.5.2
     dev: true
 
   /@parcel/watcher/2.0.4:
